@@ -1,0 +1,18 @@
+how to compare two JSON have the same properties without order?
+        var obj1 = { name: "Person 1", age:5 };
+        var obj2 = { age:5, name: "Person 1" };
+ans:
+var obj1 = [
+{ name: "logesh", person: 1, age: "5",  },
+]
+for(var property of obj1)
+{
+console.log(property);
+}
+var obj2 = [
+{ age : "5", name: "logesh", person: 1, },
+]
+for(var property of obj2)
+{
+console.log(property);
+}
